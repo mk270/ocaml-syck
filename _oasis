@@ -1,9 +1,9 @@
 OASISFormat: 0.3
 Name:        ocaml-syck
-Version:     0.1.2
+Version:     0.1.1
 Synopsis:    YAML syck for OCaml
-Authors:     Sean Proctor
-License:     LGPL-2.1 with OCaml linking exception
+Authors:     Christopher R. Waterson
+License:     MIT
 Plugins:     DevFiles (0.3)
 BuildTools:   ocamlbuild
 
