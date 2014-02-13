@@ -1,0 +1,19 @@
+OASISFormat: 0.3
+Name:        ocaml-syck
+Version:     0.1.2
+Synopsis:    YAML syck for OCaml
+Authors:     Sean Proctor
+License:     LGPL-2.1 with OCaml linking exception
+Plugins:     DevFiles (0.3)
+BuildTools:   ocamlbuild
+
+Library yaml
+  Path:	        yaml
+  Modules:      YamlNode, YamlParser
+  CSources:     parser.c
+  CCLib:	-lsyck
+
+Executable yamlsh
+  Path:		t
+  BuildDepends:	yaml
+  MainIs:	yamlsh.ml
